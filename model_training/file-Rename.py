@@ -13,11 +13,15 @@ if os.path.exists(folder_path) and os.path.isdir(folder_path):
     # aeroplane_files = [file for file in files if file.startswith("aeroplane")]
 
     # Rename the files with sequential numbers
+    
     for i, old_name in enumerate(files):
-        new_name = f"{i+1:06d}.jpg"  # Format the new name with leading zeros
-        old_path = os.path.join(folder_path, old_name)
-        new_path = os.path.join(folder_path, new_name)
-        os.rename(old_path, new_path)
+        try:
+            new_name = f"_{i+1:06d}.jpg"  # Format the new name with leading zeros
+            old_path = os.path.join(folder_path, old_name)
+            new_path = os.path.join(folder_path, new_name)
+            os.rename(old_path, new_path)
+        except:
+            pass
 
     print(f"Files of {folder_path} is renamed successfully !!!")
 else:
