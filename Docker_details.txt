@@ -1,7 +1,7 @@
 ### Build the Docker image
 
-docker build -t drone_detection .
+docker build -t atharvapawar456/drone_detection .
 
 
 ### Run Docker image
-docker run -it --rm -v $(pwd):/app -v /path/to/model:/app/model your_docker_image_name
+docker run -it --rm -v $(pwd):/app -v /path/to/model:/app/model atharvapawar456/drone_detection
