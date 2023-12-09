@@ -60,6 +60,8 @@ This project uses a pre-trained model for detecting drones and aeroplanes in rea
 
 - The pre-trained model used in this project was trained on drone, aeroplane, noise dataset.
 
+- Model Trained on Kaggle : https://www.kaggle.com/code/mrappplg/custome-drone-and-aeroplane-detection-model
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
